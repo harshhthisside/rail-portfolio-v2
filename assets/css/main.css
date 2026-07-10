@@ -13,3 +13,7 @@
 @import url("pages/about.css");
 @import url("pages/contact.css");
 @import url("pages/gallery.css");
+@import url("components/stats.css");
+@import url("components/zones-modal.css");
+@import url("components/journey-modal.css");
+@import url("pages/blog-post.css");

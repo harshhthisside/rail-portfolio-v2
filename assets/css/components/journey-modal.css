@@ -1,0 +1,412 @@
+/* ==========================================================
+   RAILSCAPE JOURNEY MODAL (V3 - PERFORMANCE EDITION)
+========================================================== */
+
+.journey-modal{
+    position:fixed;
+    inset:0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    opacity:0;
+    visibility:hidden;
+    transition:.3s;
+    z-index:9999;
+}
+
+.journey-modal.active{
+    opacity:1;
+    visibility:visible;
+}
+
+/* Overlay */
+
+.journey-overlay{
+    position:absolute;
+    inset:0;
+    background:rgba(8,15,30,.72);
+}
+
+/* Modal */
+
+.journey-content{
+
+    position:relative;
+
+    width:min(1150px,94%);
+    max-height:90vh;
+
+    overflow:auto;
+
+    padding:45px;
+
+    border-radius:24px;
+
+    background:#0b1d36;
+
+    color:#fff;
+
+    box-shadow:0 20px 60px rgba(0,0,0,.35);
+
+}
+
+/* Close */
+
+.close-journey{
+
+    position:absolute;
+
+    right:20px;
+    top:20px;
+
+    width:46px;
+    height:46px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:#2563eb;
+
+    color:#fff;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+}
+
+.close-journey:hover{
+
+    transform:rotate(90deg);
+
+}
+
+/* Header */
+
+.journey-header{
+
+    text-align:center;
+
+    margin-bottom:40px;
+
+}
+
+.journey-badge{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    padding:8px 18px;
+
+    border-radius:999px;
+
+    background:#1d4ed8;
+
+    font-size:.9rem;
+
+    font-weight:600;
+
+}
+
+.journey-header h2{
+
+    margin:20px 0 10px;
+
+    font-size:2.2rem;
+
+}
+
+.journey-header p{
+
+    color:#cbd5e1;
+
+}
+
+/* Grid */
+
+.journey-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(340px,1fr));
+
+    gap:28px;
+
+}
+
+/* Ticket */
+
+.rail-ticket{
+
+    background:#132845;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:22px;
+
+    padding:28px;
+
+    transition:.3s;
+
+    position:relative;
+
+}
+
+.rail-ticket:hover{
+
+    transform:translateY(-8px);
+
+    border-color:#3b82f6;
+
+}
+
+/* Badge */
+
+.ticket-badge{
+
+    display:inline-block;
+
+    padding:8px 16px;
+
+    border-radius:999px;
+
+    font-weight:700;
+
+    font-size:.82rem;
+
+    margin-bottom:25px;
+
+}
+
+.gold{
+
+    background:#facc15;
+
+    color:#111827;
+
+}
+
+.silver{
+
+    background:#d1d5db;
+
+    color:#111827;
+
+}
+
+/* Route */
+
+.route{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    gap:20px;
+
+    margin-bottom:28px;
+
+}
+
+.station{
+
+    width:120px;
+
+    text-align:center;
+
+}
+
+.station h3{
+
+    font-size:1.8rem;
+
+    color:#60a5fa;
+
+    margin-bottom:8px;
+
+}
+
+.station small{
+
+    color:#cbd5e1;
+
+    line-height:1.4;
+
+}
+
+/* Track */
+
+.route-track{
+
+    flex:1;
+
+    position:relative;
+
+}
+
+/* Train Name */
+
+.train-name{
+
+    background:#1e3a5f;
+
+    padding:14px;
+
+    border-radius:14px;
+
+    text-align:center;
+
+    font-weight:600;
+
+    margin-bottom:25px;
+
+}
+
+/* Stats */
+
+.ticket-info{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:18px;
+
+}
+
+.ticket-info div{
+
+    background:#10223d;
+
+    padding:18px;
+
+    border-radius:16px;
+
+    text-align:center;
+
+}
+
+.ticket-info span{
+
+    display:block;
+
+    color:#94a3b8;
+
+    font-size:.85rem;
+
+    margin-bottom:8px;
+
+}
+
+.ticket-info strong{
+
+    font-size:1.3rem;
+
+}
+
+/* Footer */
+
+.journey-footer{
+
+    margin-top:35px;
+
+    text-align:center;
+
+    color:#94a3b8;
+
+}
+
+/* Animations */
+
+
+
+/* Mobile */
+
+@media(max-width:768px){
+
+    .journey-content{
+
+        padding:28px 18px;
+
+    }
+
+    .route{
+
+        flex-direction:column;
+
+    }
+
+    .route-track{
+
+        width:100%;
+
+    }
+
+    .station{
+
+        width:100%;
+
+    }
+
+    .ticket-info{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+/* Route Track  */
+.route-track{
+
+    flex:1;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+}
+
+.route-arrow{
+
+    display:flex;
+
+    align-items:center;
+
+    width:100%;
+
+    gap:12px;
+
+}
+
+.route-arrow .line{
+
+    flex:1;
+
+    height:3px;
+
+    border-radius:50px;
+
+    background:linear-gradient(
+        90deg,
+        #38bdf8,
+        #2563eb
+    );
+
+}
+
+.route-arrow i{
+
+    font-size:1.4rem;
+
+    color:#60a5fa;
+
+}

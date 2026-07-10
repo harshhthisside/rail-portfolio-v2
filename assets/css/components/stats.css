@@ -1,0 +1,643 @@
+/* ==========================================
+   RAILSCAPE PREMIUM STATS
+   STEP 2A - LAYOUT + GLASSMORPHISM
+========================================== */
+
+.stats-section{
+
+    position:relative;
+
+    overflow:hidden;
+
+    padding:120px 20px;
+
+    background:linear-gradient(
+        135deg,
+        #06162d 0%,
+        #0a2b52 45%,
+        #123d73 100%
+    );
+
+}
+
+.stats-section .container{
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+/* ==========================
+   Background Blobs
+========================== */
+
+.stats-bg-circle{
+
+    position:absolute;
+
+    border-radius:50%;
+
+    filter:blur(90px);
+
+    opacity:.25;
+
+    pointer-events:none;
+
+}
+
+.circle-1{
+
+    width:320px;
+
+    height:320px;
+
+    background:#1ea7ff;
+
+    top:-120px;
+
+    left:-80px;
+
+}
+
+.circle-2{
+
+    width:420px;
+
+    height:420px;
+
+    background:#4f7dff;
+
+    right:-150px;
+
+    bottom:-150px;
+
+}
+
+/* ==========================
+   Heading
+========================== */
+
+.stats-heading{
+
+    text-align:center;
+
+    margin-bottom:70px;
+
+}
+
+.stats-badge{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    padding:10px 22px;
+
+    border-radius:999px;
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(15px);
+
+    border:1px solid rgba(255,255,255,.12);
+
+    color:#fff;
+
+    font-size:.9rem;
+
+    font-weight:700;
+
+    letter-spacing:1px;
+
+    text-transform:uppercase;
+
+}
+
+.stats-heading h2{
+
+    margin-top:28px;
+
+    color:#fff;
+
+    font-size:3rem;
+
+    line-height:1.15;
+
+}
+
+.stats-heading p{
+
+    max-width:720px;
+
+    margin:22px auto 0;
+
+    color:rgba(255,255,255,.75);
+
+    line-height:1.9;
+
+    font-size:1.05rem;
+
+}
+
+/* ==========================
+   Grid
+========================== */
+
+.stats-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:30px;
+
+}
+
+/* ==========================
+   Card
+========================== */
+
+.stat-card{
+
+    position:relative;
+
+    overflow:hidden;
+
+    padding:45px 30px;
+
+    border-radius:28px;
+
+    text-align:center;
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(22px);
+
+    -webkit-backdrop-filter:blur(22px);
+
+    border:1px solid rgba(255,255,255,.10);
+
+    box-shadow:
+        0 20px 50px rgba(0,0,0,.25);
+
+}
+
+/* Placeholder for animated border */
+
+.glass-border{
+
+    position:absolute;
+
+    inset:0;
+
+    border-radius:28px;
+
+    pointer-events:none;
+
+}
+
+/* Placeholder for shine */
+
+.shine{
+
+    position:absolute;
+
+    inset:0;
+
+    pointer-events:none;
+
+}
+
+/* ==========================
+   Icon
+========================== */
+
+.stat-icon{
+
+    width:90px;
+
+    height:90px;
+
+    margin:0 auto 30px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:2rem;
+
+    color:#ffffff;
+
+    background:linear-gradient(
+        135deg,
+        #2ea7ff,
+        #4d5dff
+    );
+
+    box-shadow:
+        0 15px 35px rgba(46,167,255,.35);
+
+}
+
+/* ==========================
+   Text
+========================== */
+
+.stat-title{
+
+    display:block;
+
+    color:rgba(255,255,255,.70);
+
+    font-size:.82rem;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+    font-weight:700;
+
+    margin-bottom:18px;
+
+}
+
+.stat-card h3{
+
+    color:#ffffff;
+
+    font-size:3.2rem;
+
+    font-weight:800;
+
+    margin-bottom:15px;
+
+}
+
+.stat-card small{
+
+    display:block;
+
+    color:rgba(255,255,255,.65);
+
+    font-size:.95rem;
+
+}
+
+/* ==========================
+   Responsive
+========================== */
+
+@media (max-width:1100px){
+
+    .stats-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+@media (max-width:768px){
+
+    .stats-section{
+
+        padding:90px 20px;
+
+    }
+
+    .stats-heading h2{
+
+        font-size:2.3rem;
+
+    }
+
+    .stats-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .stat-card{
+
+        padding:40px 25px;
+
+    }
+
+}
+/* ==========================================
+   STEP 2B - PREMIUM ANIMATIONS
+========================================== */
+
+/* ---------- Floating Background ---------- */
+
+@keyframes blobFloat{
+
+    0%{
+        transform:translate(0,0) scale(1);
+    }
+
+    50%{
+        transform:translate(40px,-30px) scale(1.1);
+    }
+
+    100%{
+        transform:translate(0,0) scale(1);
+    }
+
+}
+
+.circle-1{
+
+    animation:blobFloat 12s ease-in-out infinite;
+
+}
+
+.circle-2{
+
+    animation:blobFloat 16s ease-in-out infinite reverse;
+
+}
+
+
+/* ---------- Floating Cards ---------- */
+
+@keyframes cardFloat{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-10px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
+
+.stat-card{
+
+    animation:cardFloat 6s ease-in-out infinite;
+
+    transition:
+
+        transform .45s ease,
+
+        box-shadow .45s ease,
+
+        border-color .45s ease;
+
+}
+
+.stat-card:nth-child(2){
+
+    animation-delay:.3s;
+
+}
+
+.stat-card:nth-child(3){
+
+    animation-delay:.6s;
+
+}
+
+.stat-card:nth-child(4){
+
+    animation-delay:.9s;
+
+}
+
+
+/* ---------- Hover ---------- */
+
+.stat-card:hover{
+
+    transform:translateY(-18px) scale(1.03);
+
+    box-shadow:
+
+        0 30px 60px rgba(0,0,0,.35),
+
+        0 0 35px rgba(30,167,255,.25);
+
+}
+
+
+/* ---------- Icon Pulse ---------- */
+
+@keyframes pulseGlow{
+
+    0%{
+
+        box-shadow:
+
+        0 0 0 0 rgba(46,167,255,.45);
+
+    }
+
+    70%{
+
+        box-shadow:
+
+        0 0 0 22px rgba(46,167,255,0);
+
+    }
+
+    100%{
+
+        box-shadow:
+
+        0 0 0 0 rgba(46,167,255,0);
+
+    }
+
+}
+
+.stat-icon{
+
+    animation:pulseGlow 2.5s infinite;
+
+}
+
+
+/* ---------- Shine Effect ---------- */
+
+.shine{
+
+    position:absolute;
+
+    inset:0;
+
+    overflow:hidden;
+
+}
+
+.shine::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:-60%;
+
+    left:-130%;
+
+    width:60%;
+
+    height:220%;
+
+    background:
+
+        linear-gradient(
+
+            120deg,
+
+            transparent,
+
+            rgba(255,255,255,.35),
+
+            transparent
+
+        );
+
+    transform:rotate(25deg);
+
+}
+
+.stat-card:hover .shine::before{
+
+    animation:shineMove .9s forwards;
+
+}
+
+@keyframes shineMove{
+
+    from{
+
+        left:-130%;
+
+    }
+
+    to{
+
+        left:180%;
+
+    }
+
+}
+
+
+/* ---------- Animated Gradient Border ---------- */
+
+.glass-border{
+
+    position:absolute;
+
+    inset:-2px;
+
+    border-radius:30px;
+
+    background:linear-gradient(
+        45deg,
+        #00c6ff,
+        #0072ff,
+        #6a5cff,
+        #00c6ff
+    );
+
+    background-size:300% 300%;
+
+    animation:borderMove 6s linear infinite;
+
+    opacity:.8;
+
+    z-index:-1;
+
+    filter:blur(8px);
+
+}
+
+@keyframes borderMove{
+
+    0%{
+
+        background-position:0% 50%;
+
+    }
+
+    50%{
+
+        background-position:100% 50%;
+
+    }
+
+    100%{
+
+        background-position:0% 50%;
+
+    }
+
+}
+
+
+/* ---------- Number Animation ---------- */
+
+.stat-card h3{
+
+    transition:transform .3s ease;
+
+}
+
+.stat-card:hover h3{
+
+    transform:scale(1.08);
+
+}
+
+
+/* ---------- Icon Rotation ---------- */
+
+.stat-card:hover .stat-icon{
+
+    transform:rotate(8deg) scale(1.08);
+
+    transition:.4s;
+
+}
+
+
+/* ---------- Mouse Cursor ---------- */
+
+.stat-card{
+
+    cursor:default;
+
+}
+
+
+/* ---------- Smooth ---------- */
+
+.stats-section *{
+
+    transition:
+
+        color .3s ease,
+
+        background .3s ease;
+
+}
