@@ -1,0 +1,90 @@
+/* =====================
+HEADER
+===================== */
+
+header{
+
+position:absolute;
+top:0;
+left:0;
+width:100%;
+z-index:100;
+
+}
+
+.navbar{
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+padding:25px 0;
+
+}
+
+.logo{
+
+font-size:1.8rem;
+
+font-family:'Poppins',sans-serif;
+
+font-weight:700;
+
+color:white;
+
+}
+
+.nav-links{
+
+display:flex;
+
+gap:35px;
+
+}
+
+.nav-links a{
+
+color:white;
+
+transition:.3s;
+
+font-weight:500;
+
+}
+
+.nav-links a:hover{
+
+color:var(--accent);
+
+}
+
+.active{
+
+color:var(--accent);
+
+}
+/* =====================
+STICKY HEADER
+===================== */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: all .3s ease;
+}
+
+header.sticky {
+    background: rgba(20, 20, 20, 0.95);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 20px rgba(0,0,0,.15);
+}
+@media (max-width:768px){
+
+.nav-links{
+    display:none;
+}
+
+}

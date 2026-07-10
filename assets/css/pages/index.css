@@ -1,0 +1,236 @@
+/* =====================
+HERO
+===================== */
+
+.hero{
+
+height:100vh;
+
+background: url("../../images/hero/hero.jpg") center center/cover no-repeat;
+
+position:relative;
+
+}
+
+.overlay{
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.60);
+
+    display:flex;
+    align-items:center;
+
+    padding-top:80px;
+}
+
+.hero-content{
+
+max-width:700px;
+
+color:white;
+
+}
+
+.hero-badge{
+
+display:inline-block;
+
+padding:8px 18px;
+
+background:rgba(255,255,255,.15);
+
+border-radius:50px;
+
+backdrop-filter:blur(8px);
+
+margin-bottom:25px;
+
+}
+
+.hero h1{
+
+font-family:'Poppins',sans-serif;
+
+font-size:clamp(3rem,6vw,4.2rem);
+
+line-height:1.1;
+
+margin-bottom:20px;
+
+}
+
+.hero-subtitle{
+
+font-size:1.2rem;
+
+letter-spacing:2px;
+
+margin-bottom:25px;
+
+opacity:.9;
+
+}
+
+.hero-description{
+
+max-width:600px;
+
+}
+
+.hero-buttons{
+
+display:flex;
+
+gap:20px;
+
+flex-wrap:wrap;
+
+}
+
+.btn{
+
+padding:15px 35px;
+
+border-radius:50px;
+
+font-weight:600;
+
+transition:.3s;
+
+}
+
+.btn-primary{
+
+background:var(--primary);
+
+color:white;
+
+}
+
+.btn-primary:hover{
+
+transform:translateY(-4px);
+
+}
+
+.btn-secondary{
+
+border:2px solid white;
+
+color:white;
+
+}
+
+.btn-secondary:hover{
+
+background:white;
+
+color:#222;
+
+}
+.hero-content{
+
+animation:fadeUp 1s ease;
+
+}
+
+@keyframes fadeUp{
+
+from{
+
+opacity:0;
+transform:translateY(30px);
+
+}
+
+to{
+
+opacity:1;
+transform:translateY(0);
+
+}
+
+}
+
+/* =====================
+JOURNEY
+===================== */
+
+.journey{
+
+padding:100px 0;
+
+background:#f8f9fa;
+
+}
+
+.journey-content{
+
+max-width:850px;
+
+margin:auto;
+
+text-align:center;
+
+}
+
+.section-tag{
+
+display:inline-block;
+
+padding:8px 18px;
+
+background:#dfefff;
+
+border-radius:30px;
+
+color:var(--primary);
+
+font-weight:600;
+
+margin-bottom:20px;
+
+}
+
+.journey h2{
+
+font-family:'Poppins',sans-serif;
+
+font-size:3rem;
+
+margin-bottom:25px;
+
+}
+
+.journey p{
+
+font-size:1.1rem;
+
+line-height:1.9;
+
+color:#666;
+
+}
+@media (max-width:768px){
+
+.hero h1{
+    font-size:2.6rem;
+}
+
+.hero-subtitle{
+    font-size:1rem;
+}
+
+.hero-description{
+    font-size:1rem;
+}
+
+.hero-buttons{
+    flex-direction:column;
+}
+
+.journey h2{
+    font-size:2rem;
+}
+
+}

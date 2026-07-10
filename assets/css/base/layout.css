@@ -1,0 +1,11 @@
+/* =====================
+CONTAINER
+===================== */
+
+.container{
+
+width:90%;
+max-width:var(--container);
+margin:auto;
+
+}

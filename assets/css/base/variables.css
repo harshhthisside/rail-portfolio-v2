@@ -1,0 +1,22 @@
+
+/* =====================
+VARIABLES
+===================== */
+
+:root{
+
+--primary:#0B5ED7;
+--accent:#FFC107;
+
+--dark:#222;
+--light:#666;
+
+--white:#fff;
+
+--container:1200px;
+
+--radius:12px;
+
+--transition:.3s;
+
+}
