@@ -18,6 +18,8 @@
 
     <link rel="stylesheet" href="../assets/css/pages/blog-post.css">
 
+    <link rel="stylesheet" href="../assets/css/pages/rating.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,7 +33,7 @@
 
 </head>
 
-<body class="solid-header">
+<body class="solid-header" data-blog="10103-mandovi-express">
 
 <div class="rs-blog">
 
@@ -876,6 +878,88 @@ Overall Rating
 
 </main>
 
+<!-- ===========================
+     Journey Rating
+============================ -->
+<!-- ===========================
+     Journey Rating
+============================ -->
+<section class="journey-rating">
+
+    <h2>Rate this Journey</h2>
+
+    <p>Did you enjoy reading this railway experience?</p>
+
+    <div id="googleLoginArea">
+
+    <button id="googleLoginBtn" class="google-login-btn">
+        🔐 Sign in with Google
+    </button>
+
+</div>
+
+<div id="userInfo" style="display:none;">
+
+    <img id="userPhoto">
+
+    <span id="userName"></span>
+
+    <button id="logoutBtn">Logout</button>
+
+</div>
+
+    <div class="rating-buttons">
+
+        <button class="rating-btn good" data-rating="Good">
+            😊 Good
+        </button>
+
+        <button class="rating-btn average" data-rating="Average">
+            😐 Average
+        </button>
+
+        <button class="rating-btn bad" data-rating="Bad">
+            😞 Bad
+        </button>
+
+    </div>
+
+    <button id="submitRating">
+        Submit Rating
+    </button>
+
+    <p id="ratingMessage"></p>
+    <!-- Community Rating -->
+<div class="rating-summary">
+
+    <h3>⭐ Community Rating</h3>
+
+    <div class="rating-row">
+        <span>😊 Good</span>
+        <span id="goodCount">0</span>
+    </div>
+
+    <div class="rating-row">
+        <span>😐 Average</span>
+        <span id="averageCount">0</span>
+    </div>
+
+    <div class="rating-row">
+        <span>😞 Bad</span>
+        <span id="badCount">0</span>
+    </div>
+
+    <hr>
+
+    <div class="rating-row total">
+        <span>Total Ratings</span>
+        <span id="totalRatings">0</span>
+    </div>
+
+</div>
+
+</section>
+
 <footer class="rs-footer">
 
 <p>
@@ -889,6 +973,8 @@ Overall Rating
 </div>
 
 <script src="../assets/js/main.js"></script>
+<script type="module" src="../assets/js/rating.js"></script>
+<script type="module" src="../assets/js/auth.js"></script>
 
 </body>
 
