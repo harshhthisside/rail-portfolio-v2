@@ -1,5 +1,5 @@
 /* ==========================================
-   RAILSCAPE JOURNEY MODAL
+   RailCanvas JOURNEY MODAL
 ========================================== */
 
 console.log("Journey Modal Loaded");

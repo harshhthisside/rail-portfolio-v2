@@ -1,5 +1,5 @@
 /* ==========================================
-   RAILSCAPE PREMIUM STATS
+   RailCanvas PREMIUM STATS
 ========================================== */
 
 const stats = [
