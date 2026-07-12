@@ -1,35 +1,113 @@
-# Rail Portfolio V2
+# 🚆 RailCanvas
 
-A modern railway-themed website built using HTML, CSS, and JavaScript.
+RailCanvas is a modern railway travel website where I document my journeys across Indian Railways through detailed travel reports, photography, and railfanning experiences.
 
-## Features
+Built entirely with HTML, CSS, and JavaScript, the project focuses on speed, responsive design, and a clean reading experience while showcasing India's diverse railway network.
 
-- Responsive homepage
-- Railway gallery
-- Modular CSS architecture
-- Blog section (coming soon)
-- Contact page (coming soon)
-- Dark mode (planned)
+---
 
-## Project Structure
+## 🌐 Live Website
 
-```
-assets/
-├── css/
-├── images/
-├── js/
-├── fonts/
-index.html
-gallery.html
-```
+https://your-domain.com
 
-## Technologies Used
+*(Replace this with your Cloudflare Pages URL or custom domain once available.)*
+
+---
+
+## ✨ Features
+
+- 🚆 Detailed railway journey reports
+- 📸 Dedicated railway photography gallery
+- 📱 Fully responsive design
+- 🍔 Mobile-friendly navigation
+- ⚡ Optimized WebP images for faster loading
+- 🎨 Modern modular CSS architecture
+- 📝 Easy-to-expand blog system
+- 📬 Contact page
+- ℹ️ About page
+- 🚫 Custom railway-themed 404 page
+
+---
+
+## 🛠 Built With
 
 - HTML5
 - CSS3
-- JavaScript
+- JavaScript (Vanilla)
+- Font Awesome
+- Google Fonts
 - Git & GitHub
+- Cloudflare Pages
 
-## Author
+---
 
-Harsh Raj
+## 📂 Project Structure
+
+```text
+RailCanvas/
+│
+├── assets/
+│   ├── css/
+│   │   ├── base/
+│   │   ├── components/
+│   │   └── pages/
+│   │
+│   ├── images/
+│   │   ├── hero/
+│   │   ├── blogs/
+│   │   └── gallery/
+│   │
+│   ├── js/
+│   └── favicon/
+│
+├── blogs/
+│
+├── index.html
+├── blogs.html
+├── gallery.html
+├── about.html
+├── contact.html
+├── 404.html
+└── README.md
+```
+
+---
+
+## 🚉 Journey Reports
+
+Current featured journeys include:
+
+- 12333 Dhanbad–Bhopal Express
+- 12431 TVC–NZM Rajdhani Express
+- 10103 Mandovi Express – Food Queen of Indian Railways
+
+More journeys will be added regularly.
+
+---
+
+## 🚀 Future Plans
+
+- 🔍 Blog search
+- 🏷 Journey categories & filters
+- 🌙 Dark mode
+- 📍 Interactive railway route maps
+- 🖼 Lightbox image gallery
+- 📊 Railway travel statistics
+- ⭐ Related blog recommendations
+- 📈 SEO improvements
+
+---
+
+## 👨‍💻 Author
+
+**Harsh Raj**
+
+Rail enthusiast, photographer and web developer passionate about documenting journeys across Indian Railways.
+
+---
+
+## 📜 License
+
+This project is intended for personal portfolio and educational purposes.
+
+© 2025–Present Harsh Raj. All Rights Reserved.

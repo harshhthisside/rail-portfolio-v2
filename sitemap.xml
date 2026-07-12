@@ -2,32 +2,67 @@
 
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
+    <!-- Homepage -->
     <url>
-        <loc>https://harshhthisside.github.io/rail-portfolio-v2/</loc>
+        <loc>https://railcanva.vercel.app/</loc>
+        <lastmod>2026-07-12</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <!-- Blogs -->
+    <url>
+        <loc>https://railcanva.vercel.app/blogs.html</loc>
+        <lastmod>2026-07-12</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <!-- Gallery -->
+    <url>
+        <loc>https://railcanva.vercel.app/gallery.html</loc>
+        <lastmod>2026-07-12</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <!-- About -->
+    <url>
+        <loc>https://railcanva.vercel.app/about.html</loc>
+        <lastmod>2026-07-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- Contact -->
+    <url>
+        <loc>https://railcanva.vercel.app/contact.html</loc>
+        <lastmod>2026-07-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- Journey Reports -->
+
+    <url>
+        <loc>https://railcanva.vercel.app/blogs/11632-dhanbad-bhopal.html</loc>
+        <lastmod>2026-07-12</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.8</priority>
     </url>
 
     <url>
-        <loc>https://harshhthisside.github.io/rail-portfolio-v2/blogs.html</loc>
+        <loc>https://railcanva.vercel.app/blogs/12431-tvc-nzm-rajdhani.html</loc>
+        <lastmod>2026-07-12</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.8</priority>
     </url>
 
     <url>
-        <loc>https://harshhthisside.github.io/rail-portfolio-v2/gallery.html</loc>
-    </url>
-
-    <url>
-        <loc>https://harshhthisside.github.io/rail-portfolio-v2/about.html</loc>
-    </url>
-
-    <url>
-        <loc>https://harshhthisside.github.io/rail-portfolio-v2/contact.html</loc>
-    </url>
-
-    <url>
-        <loc>https://harshhthisside.github.io/rail-portfolio-v2/blogs/11632-dhanbad-bhopal.html</loc>
-    </url>
-
-    <url>
-        <loc>https://harshhthisside.github.io/rail-portfolio-v2/blogs/12431-tvc-nzm-rajdhani.html</loc>
+        <loc>https://railcanva.vercel.app/blogs/10103-mandovi-express.html</loc>
+        <lastmod>2026-07-12</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.8</priority>
     </url>
 
 </urlset>
