@@ -1,21 +1,19 @@
 @import url("base/reset.css");
 @import url("base/variables.css");
-@import url("base/layout.css");
-
-@import url("components/navbar.css");
-@import url("components/buttons.css");
-@import url("components/footer.css");
-@import url("components/animations.css");
-
-@import url("pages/index.css");
-@import url("pages/gallery.css");
-@import url("pages/blogs.css");
-@import url("pages/about.css");
-@import url("pages/contact.css");
-@import url("pages/gallery.css");
-@import url("components/stats.css");
-@import url("components/zones-modal.css");
-@import url("components/journey-modal.css");
-@import url("pages/blog-post.css");
-@import url("pages/about.css");
+@import url("base/layout.css"); 
+@import url("components/navbar.css"); 
+@import url("components/buttons.css"); 
+@import url("components/footer.css"); 
+@import url("components/animations.css"); 
+@import url("pages/index.css"); 
+@import url("pages/gallery.css"); 
+@import url("pages/blogs.css"); 
+@import url("pages/about.css"); 
+@import url("pages/contact.css"); 
+@import url("pages/gallery.css"); 
+@import url("components/stats.css"); 
+@import url("components/zones-modal.css"); 
+@import url("components/journey-modal.css"); 
+@import url("pages/blog-post.css"); 
+@import url("pages/about.css"); 
 @import url("pages/contact.css");
