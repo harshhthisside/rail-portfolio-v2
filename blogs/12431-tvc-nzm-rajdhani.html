@@ -12,7 +12,7 @@
     <link rel="icon" type="image/png" href="../assets/favicon/favicon.png">
 
     <link rel="stylesheet" href="../assets/css/main.css">
-    <link rel="stylesheet" href="../assets/css/blog-post.css">
+    <link rel="stylesheet" href="../assets/css/pages/blog-post.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,31 +28,35 @@
 
 <div class="rs-blog">
 
-    <header class="rs-header">
+    <header id="header">
 
-        <div class="rs-wrapper">
+    <nav class="container navbar">
 
-            <a href="../index.html" class="rs-logo">
-                🚆 RailCanvas
-            </a>
+        <a href="../index.html" class="logo">
+            🚆 RailCanvas
+        </a>
 
-            <nav class="rs-nav">
-
-                <a href="../index.html">Home</a>
-
-                <a href="../blogs.html">Blogs</a>
-
-                <a href="../gallery.html">Gallery</a>
-
-                <a href="../about.html">About</a>
-
-                <a href="../contact.html">Contact</a>
-
-            </nav>
-
+        <div class="menu-toggle" id="menuToggle">
+            <i class="fa-solid fa-bars"></i>
         </div>
 
-    </header>
+        <ul class="nav-links">
+
+            <li><a href="../index.html">Home</a></li>
+
+            <li><a href="../blogs.html" class="active">Blogs</a></li>
+
+            <li><a href="../gallery.html">Gallery</a></li>
+
+            <li><a href="../about.html">About</a></li>
+
+            <li><a href="../contact.html">Contact</a></li>
+
+        </ul>
+
+    </nav>
+
+</header>
 
     <main class="rs-main">
 
@@ -392,6 +396,8 @@ this became one of the most memorable train journeys I have ever taken.
 </footer>
 
 </div>
+
+<script src="../assets/js/main.js"></script>
 
 </body>
 
