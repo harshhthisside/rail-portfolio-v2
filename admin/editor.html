@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>RailCanvas Blog Editor</title>
+
+<link rel="stylesheet" href="css/editor.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="editor-container">
+
+<h1>🚆 RailCanvas Blog Editor</h1>
+
+<!-- BASIC INFORMATION -->
+
+<div class="form-group">
+<label>Blog Title</label>
+<input type="text" id="title" placeholder="11632 Dhanbad–Bhopal Express">
+</div>
+
+<div class="form-group">
+<label>Slug</label>
+<input type="text" id="slug" placeholder="11632-dhanbad-bhopal">
+</div>
+
+<div class="form-group">
+<label>Category</label>
+<input type="text" id="category" placeholder="Journey Report">
+</div>
+
+<div class="form-group">
+<label>Hero Tag</label>
+<input type="text" id="heroTag" placeholder="Journey Report">
+</div>
+
+<div class="form-group">
+<label>Journey Date</label>
+<input type="text" id="date" placeholder="April 2026">
+</div>
+
+<div class="form-group">
+<label>Train / Coach</label>
+<input type="text" id="train" placeholder="Second AC">
+</div>
+
+<div class="form-group">
+<label>Route</label>
+<input type="text" id="route" placeholder="Dhanbad → Bhopal">
+</div>
+
+<div class="form-group">
+<label>Locomotive</label>
+<input type="text" id="locomotive" placeholder="SRC WAP-7">
+</div>
+
+<div class="form-group">
+<label>Distance</label>
+<input type="text" id="distance" placeholder="Approx. 1300 km">
+</div>
+
+<div class="form-group">
+<label>Duration</label>
+<input type="text" id="duration" placeholder="Approx. 25 Hours">
+</div>
+
+<div class="form-group">
+<label>Hero Image URL</label>
+<input type="text" id="image" placeholder="assets/images/blogs/example/hero.webp">
+</div>
+
+<div class="form-group">
+<label>Short Excerpt</label>
+<textarea id="excerpt" rows="4"></textarea>
+</div>
+
+<!-- HIGHLIGHTS -->
+
+<div class="form-group">
+<label>Highlight 1</label>
+<input type="text" id="highlight1" placeholder="🚆 SRC WAP-7">
+</div>
+
+<div class="form-group">
+<label>Highlight 2</label>
+<input type="text" id="highlight2" placeholder="🏭 Industrial Corridor">
+</div>
+
+<div class="form-group">
+<label>Highlight 3</label>
+<input type="text" id="highlight3" placeholder="🔄 Chopan Reversal">
+</div>
+
+<!-- ARTICLE -->
+
+<div class="form-group">
+<label>Full Blog Content (HTML Supported)</label>
+<textarea id="content" rows="22"></textarea>
+</div>
+
+<div class="checkbox">
+
+<input
+type="checkbox"
+id="published"
+checked>
+
+<label for="published">
+
+Publish Immediately
+
+</label>
+
+</div>
+
+<button id="publishBtn">
+
+🚆 Publish Blog
+
+</button>
+
+<p id="status"></p>
+
+</div>
+
+<script type="module" src="js/editor.js"></script>
+
+</body>
+
+</html>

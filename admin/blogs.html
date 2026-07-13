@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>RailCanvas CMS | Manage Blogs</title>
+
+<link rel="stylesheet" href="css/blogs.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="topbar">
+
+   <h1>🚆 RailCanvas CMS</h1>
+
+<p id="blogCount" class="blog-count">
+
+Loading blogs...
+
+</p>
+
+    <a href="dashboard.html" class="back-btn">
+
+        ← Dashboard
+
+    </a>
+
+</div>
+
+<div class="toolbar">
+
+    <input
+        type="text"
+        id="searchBlog"
+        placeholder="Search blogs...">
+
+    <a href="editor.html" class="create-btn">
+
+        ➕ Create New Blog
+
+    </a>
+
+</div>
+
+<div id="blogList" class="blog-grid">
+
+    <div class="loading">
+
+        Loading blogs...
+
+    </div>
+
+</div>
+
+<script type="module" src="js/auth.js"></script>
+<script type="module" src="js/blogs.js"></script>
+
+</body>
+
+</html>

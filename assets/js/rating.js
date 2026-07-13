@@ -11,8 +11,12 @@ import {
     setDoc
 } from "https://www.gstatic.com/firebasejs/12.6.0/firebase-firestore.js";
 
+// Get blog slug from URL
+const blogId = new URLSearchParams(window.location.search).get("slug");
+
 let selectedRating = "";
 
+// Rating buttons
 document.querySelectorAll(".rating-btn").forEach((button) => {
 
     button.addEventListener("click", () => {
@@ -28,6 +32,7 @@ document.querySelectorAll(".rating-btn").forEach((button) => {
 
 });
 
+// Submit rating
 document.getElementById("submitRating").addEventListener("click", async () => {
 
     const message = document.getElementById("ratingMessage");
@@ -40,6 +45,14 @@ document.getElementById("submitRating").addEventListener("click", async () => {
 
     }
 
+    if (!blogId) {
+
+        message.style.color = "red";
+        message.innerText = "Blog not found.";
+        return;
+
+    }
+
     if (selectedRating === "") {
 
         message.style.color = "red";
@@ -47,8 +60,6 @@ document.getElementById("submitRating").addEventListener("click", async () => {
         return;
 
     }
-
-    const blogId = document.body.dataset.blog;
 
     const ratingId = `${blogId}_${currentUser.uid}`;
 
@@ -88,9 +99,11 @@ document.getElementById("submitRating").addEventListener("click", async () => {
     );
 
 });
+
+// Load community ratings
 async function loadRatings() {
 
-    const blogId = document.body.dataset.blog;
+    if (!blogId) return;
 
     const q = query(
         collection(db, "blogRatings"),
@@ -103,26 +116,21 @@ async function loadRatings() {
     let average = 0;
     let bad = 0;
 
-    snapshot.forEach((doc) => {
+    snapshot.forEach((docSnap) => {
 
-        const rating = doc.data().rating;
+        const rating = docSnap.data().rating;
 
         if (rating === "Good") good++;
-
         if (rating === "Average") average++;
-
         if (rating === "Bad") bad++;
 
     });
 
     document.getElementById("goodCount").textContent = good;
-
     document.getElementById("averageCount").textContent = average;
-
     document.getElementById("badCount").textContent = bad;
-
-    document.getElementById("totalRatings").textContent =
-        good + average + bad;
+    document.getElementById("totalRatings").textContent = good + average + bad;
 
 }
+
 loadRatings();

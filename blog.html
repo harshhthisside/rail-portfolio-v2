@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Loading... | RailCanvas</title>
+
+<link rel="icon" type="image/png" href="assets/favicon/favicon.png">
+
+<link rel="stylesheet" href="assets/css/main.css">
+<link rel="stylesheet" href="assets/css/pages/blog-post.css">
+<link rel="stylesheet" href="assets/css/pages/rating.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body class="solid-header">
+
+<header id="header">
+
+<nav class="container navbar">
+
+<a href="index.html" class="logo">
+
+🚆 RailCanvas
+
+</a>
+
+<div class="menu-toggle" id="menuToggle">
+
+<i class="fa-solid fa-bars"></i>
+
+</div>
+
+<ul class="nav-links">
+
+<li><a href="index.html">Home</a></li>
+<li><a href="blogs.html" class="active">Blogs</a></li>
+<li><a href="gallery.html">Gallery</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="contact.html">Contact</a></li>
+
+</ul>
+
+</nav>
+
+</header>
+
+<main>
+
+<div class="container" style="padding:80px 0;">
+
+<div id="blogContainer">
+
+<section class="rs-blog">
+
+<div class="rs-wrapper">
+
+<a href="blogs.html" class="rs-back">
+
+<i class="fa-solid fa-arrow-left"></i>
+
+Back to Blogs
+
+</a>
+
+<section class="rs-intro">
+
+<div class="rs-left">
+
+<span class="rs-tag" id="heroTag">
+
+Loading...
+
+</span>
+
+<h1 id="blogTitle">
+
+Loading Blog...
+
+</h1>
+
+<div class="rs-meta">
+
+<span id="blogDate"></span>
+
+<span id="blogTrain"></span>
+
+<span id="blogRoute"></span>
+
+</div>
+
+<p id="blogExcerpt">
+
+Loading...
+
+</p>
+
+</div>
+
+<aside class="rs-right">
+
+<img
+id="blogImage"
+src=""
+alt="Blog Image">
+
+</aside>
+
+</section>
+
+<section class="rs-info">
+
+<h2>Journey Information</h2>
+
+<div class="rs-info-table">
+
+<div class="rs-item">
+
+<span>🚆 Train</span>
+
+<strong id="infoTrain"></strong>
+
+</div>
+
+<div class="rs-item">
+
+<span>📍 Route</span>
+
+<strong id="infoRoute"></strong>
+
+</div>
+
+<div class="rs-item">
+
+<span>⚡ Locomotive</span>
+
+<strong id="infoLocomotive"></strong>
+
+</div>
+
+<div class="rs-item">
+
+<span>📏 Distance</span>
+
+<strong id="infoDistance"></strong>
+
+</div>
+
+<div class="rs-item">
+
+<span>🕒 Duration</span>
+
+<strong id="infoDuration"></strong>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="blog-highlights-section">
+
+    <h2>Journey Highlights</h2>
+
+    <div id="blogHighlights" class="blog-highlights"></div>
+
+</section>
+
+<article
+class="rs-article"
+id="blogContent">
+
+Loading article...
+
+</article>
+
+<section class="journey-rating">
+
+<h2>Rate this Journey</h2>
+
+<p>Did you enjoy reading this railway experience?</p>
+
+<div id="googleLoginArea">
+
+<button id="googleLoginBtn" class="google-login-btn">
+
+🔐 Sign in with Google
+
+</button>
+
+</div>
+
+<div id="userInfo" style="display:none;">
+
+<img id="userPhoto">
+
+<span id="userName"></span>
+
+<button id="logoutBtn">
+
+Logout
+
+</button>
+
+</div>
+
+<div class="rating-buttons">
+
+<button class="rating-btn good" data-rating="Good">
+
+😊 Good
+
+</button>
+
+<button class="rating-btn average" data-rating="Average">
+
+😐 Average
+
+</button>
+
+<button class="rating-btn bad" data-rating="Bad">
+
+😞 Bad
+
+</button>
+
+</div>
+
+<button id="submitRating">
+
+Submit Rating
+
+</button>
+
+<p id="ratingMessage"></p>
+
+<div class="rating-summary">
+
+<h3>⭐ Community Rating</h3>
+
+<div class="rating-row">
+
+<span>😊 Good</span>
+
+<span id="goodCount">0</span>
+
+</div>
+
+<div class="rating-row">
+
+<span>😐 Average</span>
+
+<span id="averageCount">0</span>
+
+</div>
+
+<div class="rating-row">
+
+<span>😞 Bad</span>
+
+<span id="badCount">0</span>
+
+</div>
+
+<hr>
+
+<div class="rating-row total">
+
+<span>Total Ratings</span>
+
+<span id="totalRatings">0</span>
+
+</div>
+
+</div>
+
+</section>
+
+</div>
+
+</section>
+
+</div>
+
+</div>
+
+</main>
+
+<footer>
+
+<div class="footer-bottom">
+
+© 2025 RailCanvas • Indian Railways Supremacy ❤️
+
+</div>
+
+</footer>
+
+<script src="assets/js/main.js"></script>
+
+<script type="module" src="assets/js/blog-page.js"></script>
+
+<script type="module" src="assets/js/rating.js"></script>
+
+<script type="module" src="assets/js/auth.js"></script>
+
+</body>
+
+</html>
